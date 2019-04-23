@@ -18,6 +18,7 @@ brew cask install macs-fan-control
 brew cask install yujitach-menumeters
 brew cask install shiftit
 brew cask install fastlane
+brew cask install zeplin
 
 # npm global
 npm install -g n
