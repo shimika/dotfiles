@@ -20,6 +20,7 @@ brew cask install google-chrome
 brew cask install postman
 brew cask install macs-fan-control
 brew cask install yujitach-menumeters
+brew cask install shiftit
 
 # Android
 brew cask install android-studio
