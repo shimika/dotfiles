@@ -17,6 +17,10 @@ brew cask install postman
 brew cask install macs-fan-control
 brew cask install yujitach-menumeters
 brew cask install shiftit
+brew cask install fastlane
+
+# npm global
+npm install -g n
 
 # Android
 brew cask install android-studio
