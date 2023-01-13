@@ -7,41 +7,45 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 brew install vim
 brew install node
 brew install yarn
+brew install nvm
+brew install fastlane
+brew install n
+brew install docker-compose
+
+# nvm
+mkdir ~/.nvm
+echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zprofile
+echo '[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm' >> ~/.zprofile
+echo '[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion' >> ~/.zprofile
+source ~/.zprofile
+
+# lokalise2
+brew tap lokalise/cli-2
+brew install lokalise2
 
 # Brew Cask
-brew tap caskroom/cask
+brew tap homebrew/cask
+brew tap homebrew/cask-versions
 
 # apps
-brew cask install alfred
-brew cask install iterm2
-brew cask install visual-studio-code
-brew cask install firefox
-brew cask install google-chrome
-brew cask install postman
-brew cask install macs-fan-control
-brew cask install shiftit
-brew cask install fastlane
-brew cask install zeplin
-brew cask install figma
-brew cask install android-studio
+brew install --cask alfred
+brew install --cask iterm2
+brew install --cask visual-studio-code
+brew install --cask google-chrome
+brew install --cask postman
+brew install --cask macs-fan-control
+brew install --cask tiles
+brew install --cask zeplin
+brew install --cask figma
+brew install --cask android-studio
+brew install --cask docker-edge
 
 # jenv
-npm install jenv
-echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc
-echo 'eval "$(jenv init -)"' >> ~/.zshrc
-source ~/.zshrc
-
-# npm global
-npm install -g n
-
-# Brew Cask Version
-brew tap homebrew/cask-versions
-brew cask install docker-edge
-brew install docker-compose
+brew install jenv
+echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zprofile
+echo 'eval "$(jenv init -)"' >> ~/.zprofile
+source ~/.zprofile
 
 # Git
 git config --global user.name "Mika Jihoon Yoon"
 git config --global user.email dyngina@gmail.com
-
-# nvm
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
