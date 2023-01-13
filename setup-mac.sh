@@ -1,5 +1,8 @@
 # Brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/mika/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/mika/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 brew install vim
 brew install node
