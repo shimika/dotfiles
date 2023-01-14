@@ -46,6 +46,15 @@ echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zprofile
 echo 'eval "$(jenv init -)"' >> ~/.zprofile
 source ~/.zprofile
 
+# java
+brew tap AdoptOpenJDK/openjdk
+sudo softwareupdate --install-rosetta # requires password
+brew install --cask adoptopenjdk/openjdk/adoptopenjdk8
+brew install --cask adoptopenjdk/openjdk/adoptopenjdk9
+brew install --cask adoptopenjdk/openjdk/adoptopenjdk11
+brew install --cask adoptopenjdk/openjdk/adoptopenjdk12
+
+
 # Git
 git config --global user.name "Mika Jihoon Yoon"
 git config --global user.email dyngina@gmail.com
