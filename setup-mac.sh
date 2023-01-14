@@ -50,9 +50,12 @@ source ~/.zprofile
 brew tap AdoptOpenJDK/openjdk
 sudo softwareupdate --install-rosetta # requires password
 brew install --cask adoptopenjdk/openjdk/adoptopenjdk8
-brew install --cask adoptopenjdk/openjdk/adoptopenjdk9
-brew install --cask adoptopenjdk/openjdk/adoptopenjdk11
+brew install --cask adoptopenjdk/openjdk/adoptopenjdk11-openj9
 brew install --cask adoptopenjdk/openjdk/adoptopenjdk12
+
+jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home
+jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-12.jdk/Contents/Home
 
 
 # Git
