@@ -11,6 +11,7 @@ brew install nvm
 brew install fastlane
 brew install n
 brew install docker-compose
+brew install awscli
 
 # nvm
 mkdir ~/.nvm
