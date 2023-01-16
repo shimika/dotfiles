@@ -20,6 +20,11 @@ echo '[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
 echo '[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion' >> ~/.zprofile
 source ~/.zprofile
 
+#n
+echo 'export N_PREFIX=$HOME/.n' >> ~/.zprofile
+echo 'export PATH=$N_PREFIX/bin:$PATH' ~/.zprofile
+source ~/.zprofile
+
 # lokalise2
 brew tap lokalise/cli-2
 brew install lokalise2
