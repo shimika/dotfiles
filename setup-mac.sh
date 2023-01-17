@@ -10,7 +10,6 @@ brew install yarn
 brew install nvm
 brew install fastlane
 brew install n
-brew install docker-compose
 brew install awscli
 
 # nvm
@@ -45,7 +44,6 @@ brew install --cask tiles
 brew install --cask zeplin
 brew install --cask figma
 brew install --cask android-studio
-brew install --cask docker-edge
 brew install --cask pritunl
 
 # jenv
