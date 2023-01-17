@@ -11,6 +11,7 @@ brew install nvm
 brew install fastlane
 brew install n
 brew install awscli
+brew install jq
 
 # nvm
 mkdir ~/.nvm
