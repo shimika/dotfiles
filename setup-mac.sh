@@ -45,7 +45,6 @@ brew install --cask tiles
 brew install --cask zeplin
 brew install --cask figma
 brew install --cask android-studio
-brew install --cask docker
 brew install --cask docker-edge
 brew install --cask pritunl
 
